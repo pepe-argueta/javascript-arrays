@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            display: block;
+            margin-bottom: 30px;
+            cursor: pointer;
+            background: navy;
+            color: aliceblue;
+            height: 20px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="C1" data-id="US" data-dial-code="1" onClick="getData(1);">USA</li>
+        <li id="C2" data-id="CA" data-dial-code="1" onClick="getData(2);">CANADA</li>
+        <li id="C3" data-id="FF" data-dial-code="3" onClick="getData(3);">FRANCE</li>
+    </ul>
+</body>
+<script>
+function getData(id) {
+    const li = document.querySelector(`#C${id}`);
+    alert(`ID elemento: ${li.id}
+	ISO ID: ${li.dataset.id}
+	Dial Code: ${li.dataset.dialCode}`);
+}
+</script>
+
+</html>
