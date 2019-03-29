@@ -1,5 +1,5 @@
-console.log('Arreglos Key');
-console.log("=============================");
+console.log('key’ a un arreglo y ordenarlos según su valor.');
+console.log("================================");
 
 var obj = {
     key1: 10,
@@ -13,6 +13,4 @@ var newObj = [];
 obje.forEach(element => {
     newObj.push(element[1]);
 });
-
-//newObj.sort();
-console.log(newObj.sort());
+console.log(newObj.sort());//Ordena el Array
